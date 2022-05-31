@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    회원가입
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="wrap">
+            <h2 class="title-center"> blog </h2>
+            <form class="form-area" action="/blog/" method="post">
+                <div class="form-group mt-2 mb-2">
+                    <label for="title">글 제목</label>
+                    <input type="text" class="form-control" id="title" name="title">
+                </div>
+                <div class="form-group mt-2 mb-2">
+                    <label for="content">글 내용</label>
+                    <input type="text" class="form-control" id="content" name="content">
+                </div>
+                <select id="category" name="category">
+                    <option value="">직업선택</option>
+                    <option value="movie">movie</option>
+                    <option value="drama">drama</option>
+                    <option value="entertainment">entertainment</option>
+                    <option value="entertainment">entertainment</option>
+                </select>
+                <hr>
+                <div style="float: right">
+                    <button type="submit" class="btn btn-primary">글쓰기</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+{% endblock %}
